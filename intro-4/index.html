@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css site-1</title>
+    <link rel="shortcut icon" href="image/html-logo.svg" type="image/x-icon">
+    <style>
+        div{
+            background-color: orange;
+            color: #7dd2b6;
+            height: 200px;
+            width: 300px;
+            font-size:  24px;
+        }
+
+        .green{
+            background-color: green;
+            color: beige;
+            height: 180px;
+            width: 240px;
+        }
+
+        span{
+            background-color: purple;
+            color: pink;
+            /* строчный эллемент нельзя сделать больше с помощью стилей обращаяясь к тегу */
+            height: 220px;
+            width: 200px;
+        }
+        
+        .str2{
+            background-color: blue;
+            color: seagreen;
+            /* с помощью класса тоже нельзяя изменять размеры */
+            height: 220px;
+            width: 200px;
+        }
+
+        #str3{
+            background-color: olive;
+            color: lightcoral;
+            /* даже с помощью id размеры не изменяяются */
+            height: 220px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+<div>orange</div>
+<div class="green">green</div>
+<span>stroka</span>
+<span class="str2">stroka2</span>
+<span id="str3">stroka3</span>
+
+</body>
+</html>
