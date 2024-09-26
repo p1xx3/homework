@@ -1,0 +1,14 @@
+body{
+    font-size: 40px;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.block,.inline{
+background-color: antiquewhite;
+}
+.block{
+    padding: 40px;
+    margin: 50px 70px 30px 20px;
+}

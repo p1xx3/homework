@@ -1,0 +1,21 @@
+body{
+    font-size: 40px;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.block,.inline{
+background-color: antiquewhite;
+}
+.block{
+    padding: 40px;
+    margin: 50px;
+    max-width: 340px;
+    display: inline-block;
+}
+
+.inline{
+    display: block;
+    max-width: 800px;
+}

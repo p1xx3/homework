@@ -1,0 +1,35 @@
+h1{
+    font-family: "Open Sans", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: italic;
+    font-variation-settings:
+    "wdth" 100;
+    font-size: 30px;
+}
+.line{
+    font-family: serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration:line-through;
+}
+.big{
+    font-family: serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 22px;
+    text-decoration:none;
+    text-align: center;
+    text-transform: uppercase;;
+}
+.purple{
+color: purple;
+word-spacing: 30px;
+font-size: 18px;
+text-decoration:overline wavy;
+}
+.doableline{
+letter-spacing: 5px;
+text-decoration: underline double;
+}

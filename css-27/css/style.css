@@ -1,0 +1,22 @@
+/* сила 10 */
+.block{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+}
+/* сила 10 */
+.block2{
+    background-color: blue;
+}
+/* сила 100 */
+#id{
+    background-color: aqua;
+}
+/* сила 1 */
+div{
+    background-color: chartreuse;
+}
+/*  сила 11 */
+div.block{
+    background-color: purple;
+}

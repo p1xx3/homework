@@ -1,0 +1,20 @@
+body{
+    font-size: 40px;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.block,.inline{
+background-color: antiquewhite;
+}
+.block{
+border: 4.5px solid #370072;
+width: 800px;
+text-align: center;
+border-radius: 25px;
+}
+.img{
+    border-radius: 100%;
+    border: 15px double #02204080;
+}

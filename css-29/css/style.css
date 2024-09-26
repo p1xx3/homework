@@ -1,0 +1,21 @@
+body{font-size: 40px;}
+.block{
+    max-width: 980px;
+    min-width: 500px;
+    min-height: 400px;
+    max-height: 800px;
+    background-color: blueviolet;
+}
+
+.inline{
+    max-width: 980px;
+    min-width: 500px;
+    min-height: 400px;
+    max-height: 800px;
+    background-color:cadetblue;
+}
+
+.img{
+height: 900px;
+width: auto;
+}

@@ -1,0 +1,25 @@
+body{
+    font-size: 40px;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.block,.inline{
+background-color: antiquewhite;
+}
+.block{
+    padding: 40px;
+    margin: 50px;
+    width: 840px;
+    /* 1 число это по х
+       2 число это по у
+       3 число размытие тени
+       4 число глубина тени */
+    box-shadow: 15px 15px 25px 10px #de0505,-15px -15px 25px 10px #2d05de;
+}
+.img{
+    margin: 50px;
+    border-radius: 25px;
+    box-shadow: 10px 25px 20px 10px #454343;
+}

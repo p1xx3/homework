@@ -1,0 +1,22 @@
+body {
+    font-size: 40px;
+    background: #f3f3f6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.block {
+    margin: 5vw;
+    height: 50vh;
+    box-shadow: 0 0.5vw 3vw #0615633b;
+    border-radius: 2vw;
+    background: #fff;
+}
+
+/* ====================================================== */
+
+.block{
+    background: url(../img/tiger.jpg) 0 46% / 630px no-repeat fixed, url(../img/zebra.webp) 90% 45% / 745px no-repeat fixed;
+}
