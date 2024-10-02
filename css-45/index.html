@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>форматы изображений </title>
+</head>
+<body> 
+    <picture>
+        <source media="(max-width: 1050px)" srcset="img/puppy-500x333.jpg">
+        <source media="(max-width: 1250px)" srcset="img/puppy-1000x667.jpg">
+        <source srcset="img/puppy-1200x800.webp" type="image/webp">
+        <img src="img/puppy-1200x800.jpg" alt="щенок">
+        
+    </picture>
+</body>
+</html>
