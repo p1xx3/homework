@@ -1,0 +1,16 @@
+.button{
+    border-radius: 100px;
+    padding: 20px 100px;
+}
+
+.red{
+    color: red;
+}
+
+.move{
+    transform: translateX(1000px);
+}
+
+.text{
+    transition: 9s;
+}
