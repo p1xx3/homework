@@ -3,7 +3,7 @@
 
     function burgerInit(e){
         const burgerInit = e.target.closest('.burger-icon')
-        const burgerNavLink = e.target.closest('.burger__link')
+        const burgerNavLink = e.target.closest('.nav__link')
 
 
         if(!burgerInit && !burgerNavLink ) return
