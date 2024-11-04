@@ -2,8 +2,8 @@
     document.addEventListener('click',burgerInit)
 
     function burgerInit(e){
-        const burgerInit = e.target.closest('burger-icon')
-        const burgerNavLink = e.target.closest('burger__link')
+        const burgerInit = e.target.closest('.burger-icon')
+        const burgerNavLink = e.target.closest('.burger__link')
 
 
         if(!burgerInit && !burgerNavLink ) return
