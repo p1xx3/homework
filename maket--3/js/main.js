@@ -36,26 +36,26 @@
     //  Табы
     const tabControls = document.querySelector('.tab-controls')
 
-    tabControls.addEventListener('click', toggletab )
+    tabControls.addEventListener('click', toggletab)
 
-    function toggletab(e){
+    function toggletab(e) {
         const tabControl = e.target.closest('.tab-controls__link')
 
-        if(!tabControl) return
+        if (!tabControl) return
         e.preventDefault()
-        if(tabControl.classList.contains('tab-controls__link--active')) return 
+        if (tabControl.classList.contains('tab-controls__link--active')) return
         const tabContentID = tabControl.getAttribute('href')
         const tabContent = document.querySelector(tabContentID)
         const activeControls = document.querySelector('.tab-controls__link--active')
         const activeContent = document.querySelector('.tab-content--show')
 
-        if(activeContent){
+        if (activeContent) {
             activeContent.classList.remove('tab-content--show')
         }
-        if(activeControls){
-            activeControls.classList.remove('tab-controls__link--active') 
+        if (activeControls) {
+            activeControls.classList.remove('tab-controls__link--active')
         }
-        
+
         tabContent.classList.add('tab-content--show')
         tabControl.classList.add('tab-controls__link--active')
     }
@@ -88,6 +88,35 @@
             }
 
         });
+    });
+
+    // слайдер
+
+    const swiper = new Swiper('.gallary__slider', {
+        spaceBetween:15,
+        slidesPerView: 1.5,
+        // If we need pagination
+        pagination: {
+            el: '.gallary__pagination',
+            type: 'fraction'
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.gallary__next',
+            prevEl: '.gallary__prev',
+        },
+        breakpoints: {
+            601:{
+                slidesPerView: 3, 
+            },
+            801:{
+                spaceBetween: 32,
+            },
+            1101: {
+                slidesPerView: 4,
+            }
+        }
     });
 })()
 
