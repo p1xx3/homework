@@ -32,7 +32,7 @@
         if (target.closest('.modal__consel') || target.classList.contains('modal')) {
             document.body.classList.remove('body-opened--modal')
         }
-    }
+    } 
     //  Табы
     const tabControls = document.querySelector('.tab-controls')
 
@@ -145,5 +145,13 @@
         }
 
     });
-})()
+
+    // маска для телефона
+
+    const telInputs = document.querySelectorAll('input[type="tel"]')
+    // telInputs.forEach(el=>console.log(el)    )
+    const im = new Inputmask('+7 (999) 999-99-99')
+    im.mask(telInputs)
+
+})() 
 

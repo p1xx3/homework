@@ -1,6 +1,8 @@
 :root {
     --accent-text: #1F1711;
     --accent-color: #FFA55C;
+    --accent-color-2:#ceaad0;
+    --input-color: #ac907a;
     --accent-bg: #FFE0CB;
     --general-bg: #FFF9F4;
     --general-text: #312C27;
@@ -23,7 +25,7 @@
     overflow: hidden;
 }
 
-.wraape {
+.wrapper {
     min-height: 100%;
     width: 100%;
     overflow: hidden;
@@ -121,7 +123,7 @@
 
 .modal__consel:hover path,
 .modal__consel:hover rect {
-    stroke: #AC907A;
+    stroke: var(--input-color);
 }
 
 .modal__img {
@@ -151,7 +153,7 @@
 .field span {
     position: absolute;
     font-size: 11px;
-    color: #AC907A;
+    color: var(--input-color);
     top: 12px;
     left: 28px;
     opacity: 0;
@@ -163,14 +165,16 @@
     font-size: 16px;
     display: block;
     width: 100%;
-    border: 1px solid #ac907a;
+    border: 1px solid var(--input-color);
     border-radius: 100px;
     padding: 19px 28px;
-    transition: var(--teansition)
+    transition: var(--teansition);
+    background: transparent;
+    margin-bottom: 20px;
 }
 
 .field__input::placeholder {
-    color: #AC907A;
+    color: var(--input-color);
     transition: var(--teansition)
 }
 

@@ -774,14 +774,6 @@
                                 class="gallary__slide swiper-slide">
                                 <img src="image/content/gallary/4.jpg" alt="женщины стоят с тортами">
                             </a>
-                            <a href="image/content/gallary/1.jpg" data-fslightbox="gallary"
-                                class="gallary__slide swiper-slide">
-                                <img src="image/content/gallary/1.jpg" alt="женщина стоит с тортом">
-                            </a>
-                            <a href="image/content/gallary/2.jpg" data-fslightbox="gallary"
-                                class="gallary__slide swiper-slide">
-                                <img src="image/content/gallary/2.jpg" alt="женщина украшает кексы">
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -815,13 +807,13 @@
                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
-                                    d="M5.77607 12.9756L11.7521 6.99962L5.77607 1.02363L6.78407 0.0156247L13.7681 6.99962L6.78407 13.9836L5.77607 12.9756Z"
-                                    fill="#FFA55C" />
-                                    <path
-                                    d="M12.76 6.28027L12.76 7.72027L0.52001 7.72027L0.52001 6.28027L12.76 6.28027Z"
+                                        d="M5.77607 12.9756L11.7521 6.99962L5.77607 1.02363L6.78407 0.0156247L13.7681 6.99962L6.78407 13.9836L5.77607 12.9756Z"
                                         fill="#FFA55C" />
-                                    </svg>
-                                </button>
+                                    <path
+                                        d="M12.76 6.28027L12.76 7.72027L0.52001 7.72027L0.52001 6.28027L12.76 6.28027Z"
+                                        fill="#FFA55C" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                     <div class="testimonials__slider swiper">
@@ -848,7 +840,7 @@
                                     чтобы было вкусно, красиво и профессионально. А если что-то и непонятно, то всегда
                                     можно спросить и уточнить.
                                 </blockquote>
-        
+
                             </div>
                             <div class="testimonials__slide swiper-slide">
                                 <div class="testimonials__student">
@@ -898,33 +890,39 @@
                                 </blockquote>
 
                             </div>
-                            <div class="testimonials__slide swiper-slide">
-                                <div class="testimonials__student">
-                                    <div class="testimonials__student-img">
-                                        <img src="image/content/testemonias/3.jpg" alt="Мужчина улыбвается">
-                                    </div>
-                                    <div class="testimonials__student-name">
-                                        игорь
-                                    </div>
-                                    <div class="testimonials__student-inst">
-                                        <img src="image/icons/socials/inst-2.svg">
-                                        igor_sverlovskii
-                                    </div>
-                                </div>
-                                <blockquote class="testimonials__quote">
-                                    <span>
-                                        Здесь я узнал много чего нового!
-                                    </span>
-                                    Спасибо большое Wake & Bake за такой курс! Здесь я узнал много чего нового для меня!
-                                    Курс очень хороший, захватывает самые актуальные темы для кондитера! Мне понравилось
-                                    что всегда была поддержка не только со стороны куратора
-                                    но и таких же учеников-кондитеров как и я. Мне прям аж будет не хватать всего этого.
-                                </blockquote>
-
-                            </div>
                         </div>
 
                         <div class="testimonials__scrollbar swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact">
+                <div class="container">
+                    <div class="contact__inner">
+                        <div class="contact__img">
+                            <img src="image/decor/cake-2.png" alt="торт украшеный ягодами">
+                        </div>
+                        <div class="contact__main">
+                            <h2 class="contact__title title">Оставить заявку на обучение</h2>
+                            <p class="contact__text">Заполни контактные данные, и наш менеджер свяжется с тобой в
+                                ближайшее время </p>
+                            <form class="contact__form">
+                                <label class="contact__label field">
+                                    <input type="text" class="field__input " placeholder="Имя">
+                                    <span>введите имя</span>
+                                </label>
+                                <input type="tel" class="contact__input " placeholder="Телефон">
+                                <label class="contact__check-lable ">
+                                    <input type="checkbox" class="contact__checkbox">
+                                    <p>
+                                        Нажимая на кнопку, вы соглашаетесь с <a target="_blank " href="# ">политикой конфиденциальности</a>
+                                    </p>
+                                </label>
+                                <button class="button" type="submit">
+                                    Записаться на курс
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -1051,6 +1049,7 @@
     </div>
     <script src="js/fslightbox.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
