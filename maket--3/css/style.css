@@ -9,7 +9,7 @@
 
 
 /* ========================================================= */
-.about {}
+
 
 .about__inner {
     display: grid;
@@ -75,15 +75,10 @@
     opacity: 1;
 }
 
-.about__body {}
 
 .about__heading {
     margin-bottom: 30px;
 }
-
-.about__title {}
-
-.about__title-text {}
 
 .about__text {
     margin-bottom: 40px;
@@ -116,11 +111,9 @@
     align-items: center;
 }
 
-.about__grid-text {}
 
 /* ======== */
 
-.program {}
 
 .program__top {
     display: flex;
@@ -135,7 +128,6 @@
     margin-bottom: 20px;
 }
 
-.program__text {}
 
 .program__tab-content {
     margin-bottom: 40px;
@@ -194,8 +186,6 @@
     margin-left: 35%;
 }
 
-.program__price {}
-
 .program__price-text {
     line-height: 1.6;
     text-transform: uppercase;
@@ -228,7 +218,6 @@
     gap: 26px;
 }
 
-.tab-controls__item {}
 
 .tab-controls__link {
     display: block;
@@ -255,7 +244,6 @@
     display: block;
 }
 
-.accordion-list {}
 
 .accordion-list__item {
     border: 1px solid var(--accent-color);
@@ -268,7 +256,6 @@
     margin-bottom: 0;
 }
 
-.accordion-list__item--opened {}
 
 .accordion-list__control {
     padding: 41px 30px;
@@ -291,7 +278,6 @@
     padding-bottom: 20px;
 }
 
-.accordion-list__control-title {}
 
 .accordion-list__control-icon {
     border: 1.5px solid var(--accent-color);
@@ -356,8 +342,6 @@
     line-height: 1.6;
 }
 
-.accordion-content__list {}
-
 .accordion-content__item {
     margin-bottom: 20px;
     display: flex;
@@ -384,11 +368,7 @@
 }
 
 
-
-
-
-.gallary {}
-
+/* --------- */
 .gallary__inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -420,7 +400,6 @@
     margin-bottom: 20px;
 }
 
-.gallary__text {}
 
 .gallary__nav {
     display: flex;
@@ -494,14 +473,6 @@
     transform: translate(-50%, -50%);
 }
 
-.gallary__next {}
-
-.gallary__slider {}
-
-.swiper {}
-
-.gallary__wrapper {}
-
 .gallary__slide {
     border-radius: var(--border-radius);
     overflow: hidden;
@@ -527,8 +498,6 @@
 .testimonials__title {
     margin-bottom: 20px;
 }
-
-.testimonials__text {}
 
 .testimonials__nav {
     display: flex;
@@ -649,8 +618,6 @@
     margin: 0 auto;
 }
 
-.testimonials__quote {}
-
 .testimonials__quote span {
     display: block;
     font-family: 'Gabriola';
@@ -717,7 +684,6 @@
     margin-bottom: 40px;
 }
 
-.contact__form {}
 
 .contact__label {
     margin-bottom: 10px;
@@ -959,6 +925,9 @@
 }
 
 @media (max-width:800px) {
+    html{
+        scroll-padding-top: 50; 
+    }
     .hero__contant {
         display: flex;
         flex-direction: column;
