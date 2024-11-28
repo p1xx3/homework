@@ -545,6 +545,7 @@
 
 .selling-slide {
     position: relative;
+    max-width: 314px;
     box-shadow: 0px 1.85px 3.15px 0px rgba(0, 0, 0, 0),0px 8.15px 6.52px 0px rgba(0, 0, 0, 0.01),0px 20px 13px 0px rgba(0, 0, 0, 0.01),0px 38.52px 25.48px 0px rgba(0, 0, 0, 0.01),0px 64.81px 46.85px 0px rgba(0, 0, 0, 0.02),0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 }
 .selling-wrapper {
@@ -590,6 +591,7 @@
 }
 .selling__slider{
     position: relative;
+    width: 100%;
 }
 .selling-button-next {
     position: absolute;

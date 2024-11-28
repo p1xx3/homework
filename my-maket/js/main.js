@@ -34,8 +34,8 @@
 
     new Swiper('.selling__slider', {
         
-        paceBetween: 10,
-        slidesPerView: 2,
+        spaceBetween: 0,
+        slidesPerView: 3,
         centeredSlides: true,
 
         navigation: {
