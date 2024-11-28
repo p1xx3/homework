@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Jadoo</title>
 </head>
@@ -44,7 +45,7 @@
                                     EN
                                     <svg width="9.707031" height="5.560638" viewBox="0 0 9.70703 5.56064" fill="none"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <path id="Vector 1" d="M0.35 0.35L4.85 4.85L9.35 0.35" stroke="#212832"
+                                        <path id="arrow" d="M0.35 0.35L4.85 4.85L9.35 0.35" stroke="#212832"
                                             stroke-opacity="1.000000" stroke-width="1.000000" />
                                     </svg>
                                     <ul class="language-list">
@@ -115,32 +116,110 @@
                         </h2>
                         <ul class="category__list">
                             <li class="category__item">
-                                <img class="category__item-img category__item-img-satellite-dish"
-                                    src="image/content/servise/satellite-dish.png" alt="">
+                                <div class="category__item-img dish">
+                                    <img src="image/content/servise/satellite-dish.png" alt="">
+                                </div>
                                 <h4 class="category__item-title">Calculated Weather</h4>
                                 <p class="category__item-text">Built Wicket longer admire do barton vanity itself do in
                                     it.</p>
                             </li>
                             <li class="category__item">
-                                <img class="category__item-img category__item-img-plane" src="image/content/servise/plane.png" alt="">
+                                <div class="category__item-img plane">
+                                    <img src="image/content/servise/plane.png" alt="">
+                                </div>
                                 <h4 class="category__item-title">Best Flights</h4>
                                 <p class="category__item-text">Engrossed listening. Park gate sell they west hard for
                                     the.</p>
                             </li>
                             <li class="category__item">
-                                <img class="category__item-img category__item-img-microphone" src="image/content/servise/microphone.png"
-                                    alt="">
+                                <div class="category__item-img microphone">
+                                    <img src="image/content/servise/microphone.png" alt="">
+                                </div>
                                 <h4 class="category__item-title">Local Events</h4>
                                 <p class="category__item-text">Barton vanity itself do in it. Preferd to men it
                                     engrossed listening. </p>
                             </li>
                             <li class="category__item">
-                                <img class="category__item-img category__item-img-gear" src="image/content/servise/gear.png" alt="">
+                                <div class="category__item-img gear">
+                                    <img src="image/content/servise/gear.png" alt="">
+                                </div>
                                 <h4 class="category__item-title">Customization</h4>
                                 <p class="category__item-text">We deliver outsourced aviation services for military
                                     customers</p>
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="main__selling selling">
+                <div class="container">
+                    <div class="selling__inner">
+                        <p class="description">
+                            Top Selling
+                        </p>
+                        <h2 class="selling__title title">
+                            Top Destinations
+                        </h2>
+                        <div class="selling__slider swiper">
+                            <div class="selling-wrapper swiper-wrapper">
+                                <div class="selling-slide">
+                                    <div class="selling__img">
+                                        <img src="image/content/destinatios/Rome.png" alt="">
+                                    </div>
+                                    <div class="selling__info">
+                                        <p class="selling__info-place">
+                                            Rome, Italty
+                                        </p>
+                                        <p class="selling__info-price">
+                                            $5,42k
+                                        </p>
+                                        <div class="selling__info-trip">
+                                            <img src="image/icons/direction.png" alt="">
+                                            10 Days Trip
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="selling-slide">
+                                    <div class="selling__img">
+                                        <img src="image/content/destinatios/London.jpg" alt="">
+                                    </div>
+                                    <div class="selling__info">
+                                        <p class="selling__info-place">London, UK</p>
+                                        <p class="selling__info-price">$4.2k</p>
+                                        <div class="selling__info-trip">
+                                            <img src="image/icons/direction.png" alt=""> 12 Days Trip
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="selling-slide">
+                                    <div class="selling__img">
+                                        <img src="image/content/destinatios/Europe.png" alt="">
+                                    </div>
+                                    <div class="selling__info">
+                                        <p class="selling__info-place">Full Europe</p>
+                                        <p class="selling__info-price">$15k</p>
+                                        <div class="selling__info-trip">
+                                            <img src="image/icons/direction.png" alt=""> 28 Days Trip
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="selling-button-next">
+                                <svg width="16.007812" height="9.418213" viewBox="0 0 16.0078 9.41821" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path id="prew-next" d="M1 1L8 8L15 1" stroke="#3E2E4D" stroke-opacity="1.000000"
+                                        stroke-width="2.000000" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="selling-button-prev">
+                                <svg width="16.007812" height="9.418213" viewBox="0 0 16.0078 9.41821" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path id="prew-next" d="M1 1L8 8L15 1" stroke="#3E2E4D" stroke-opacity="1.000000"
+                                        stroke-width="2.000000" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="selling__scrollbar swiper-scrollbar"></div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -187,6 +266,7 @@
         </div>
     </div>
     <script src="js/fslightbox.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

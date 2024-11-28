@@ -30,4 +30,22 @@
             dropContentOpen.classList.remove('language-active');
         }
     });
+    // свайпер-мест
+
+    new Swiper('.selling__slider', {
+        
+        paceBetween: 10,
+        slidesPerView: 2,
+        centeredSlides: true,
+
+        navigation: {
+            nextEl: '.selling-button-next',
+            prevEl: '.selling-button-prev',
+        },
+
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable:true,
+        },
+    });
 })();
