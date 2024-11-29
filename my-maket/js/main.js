@@ -18,6 +18,22 @@
             document.body.classList.remove('body-opened--modal');
         }
     }
+    // бургер
+    document.addEventListener('click', burgerInit)
+
+    function burgerInit(e) {
+        const burgerInit = e.target.closest('.burger-icon')
+        const burgerNavLink = e.target.closest('.nav__link')
+
+        if (!burgerInit && !burgerNavLink) return
+        if (document.documentElement.clientWidth > 900) return
+
+        if (!document.body.classList.contains('body--opened-menu')) {
+            document.body.classList.add('body--opened-menu')
+        } else {
+            document.body.classList.remove('body--opened-menu')
+        }
+    }
 
     // Меню языков
     const languageNav = document.querySelector('.language-nav');
@@ -35,7 +51,7 @@
     new Swiper('.selling__slider', {
         
         spaceBetween: 0,
-        slidesPerView: 3,
+        slidesPerView: 1,
         centeredSlides: true,
 
         navigation: {
@@ -47,5 +63,13 @@
             el: '.swiper-scrollbar',
             draggable:true,
         },
+        breakpoints:{
+            1001:{
+                slidesPerView:3
+            },
+            901:{
+                slidesPerView:2
+            }
+        }
     });
 })();
