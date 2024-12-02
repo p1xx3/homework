@@ -49,7 +49,7 @@
     // свайпер-мест
 
     new Swiper('.selling__slider', {
-        
+
         spaceBetween: 0,
         slidesPerView: 1,
         centeredSlides: true,
@@ -61,15 +61,31 @@
 
         scrollbar: {
             el: '.swiper-scrollbar',
-            draggable:true,
+            draggable: true,
         },
-        breakpoints:{
-            1001:{
-                slidesPerView:3
+        breakpoints: {
+            1001: {
+                slidesPerView: 3
             },
-            901:{
-                slidesPerView:2
+            901: {
+                slidesPerView: 2
             }
         }
+    });
+
+    new Swiper(".testimonials__swiper", {
+        effect: "cards",
+        grabCursor: true,
+        pagination: {
+
+            el: '.testimonials__pagination',
+            clickable: true,
+        },
+
+        
+        navigation: {
+            nextEl: '.button-next',
+            prevEl: '.button-prev',
+        },
     });
 })();

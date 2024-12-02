@@ -831,9 +831,11 @@
     align-items: center;
     padding-bottom: 25px;
 }
-.plan__img img{
+
+.plan__img img {
     width: 100%;
 }
+
 .plan__title {
     color: #080809;
     font-family: 'Poppins';
@@ -932,13 +934,15 @@
     font-weight: 500;
     line-height: 124.5%;
     color: #080809;
-    display:flex;
+    display: flex;
 }
-.line{
+
+.line {
     display: flex;
     margin-top: 10px;
     justify-content: start;
 }
+
 .line::after {
     content: '';
     width: 100px;
@@ -946,7 +950,8 @@
     border-radius: 30px;
     background: #f5f5f5;
 }
-.line::before{
+
+.line::before {
     content: '';
     width: 73px;
     height: 5px;
@@ -958,15 +963,124 @@
     color: #8A79DF;
 }
 
+/* ------ */
+
+.testimonials {
+    margin-bottom: 96px;
+}
+
+.testimonials__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials__info {
+    max-width: 410px;
+    width: 100%;
+    max-height: 360px;
+}
+
+.testimonials__title {
+    color: #14183e;
+    font-family: 'Volkhov';
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 65px;
+    margin-bottom: 82px;
+}
+
+.testimonials__pagination {
+    --swiper-theme-color: #39425D
+}
+
+.testimonials__slide {
+    max-width: 670px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.testimonials__client {
+    max-width: 504px;
+    position: relative;
+    padding: 70px 34px 34px 71px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 1.85px 3.15px 0px rgba(0, 0, 0, 0), 0px 8.15px 6.52px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.52px 25.48px 0px rgba(0, 0, 0, 0.01), 0px 64.81px 46.85px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+
+.testimonials__client-img {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.testimonials__client-img img {
+    border-radius: 50%;
+}
+
+.testimonials__client-feedback {
+    color: #5e6282;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.testimonials__client-name {
+    color: #5e6282;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    margin: 34px 0 5px;
+}
+
+.testimonials__client-place {
+    color: #5e6282;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.button-prev {
+    transform: rotate(180deg);
+    margin: 140px 0 57px;
+}
+
+.button-next {}
+
+.prev-next {
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper-button-disabled.button-next path,
+.swiper-button-disabled.button-prev path {
+    stroke: #e1d9e1;
+}
+
+.swiper-button-disabled.button-next:hover,
+.swiper-button-disabled.button-prev:hover {
+    background: transparent;
+}
+
+.swiper-button-disabled.button-next:hover path,
+.swiper-button-disabled.button-prev:hover path {
+    stroke: #e1d9e1;
+}
+
 /* ----- */
 /* ----- */
 /* ----- */
 @media (max-width:1350px) {
-    .agile__ongoing{
+    .agile__ongoing {
         display: none;
     }
-    
+
 }
+
 @media (max-width:1200px) {
     .img-decor {
         display: none;
@@ -974,6 +1088,10 @@
 
     .category__list {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .testimonials__slide {
+        max-width: 360px;
     }
 }
 
@@ -1039,11 +1157,42 @@
     .selling__info {
         grid-template-columns: 1fr .8fr;
     }
-    .agile__inner{
+
+    .agile__inner {
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
+    }
+
+    .testimonials__inner {
+        flex-direction: column;
+    }
+
+    .testimonials__info {
+        max-width: none;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .testimonials__slide {
+        max-width: 700px;
+        margin-left: auto;
+    }
+
+    .prev-next {
+        justify-content: center;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .button-next {
+        transform: rotate(270deg);
+    }
+
+    .button-prev {
+        margin: 10px;
+        transform: rotate(90deg);
     }
 }
 
@@ -1088,7 +1237,11 @@
         font-size: 40px;
         text-align: center;
     }
-    .agile__title{
+
+    .agile__title {
         font-size: 40px;
+    }
+    .testimonials__title{
+        font-size: 36px;
     }
 }
