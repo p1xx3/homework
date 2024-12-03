@@ -52,6 +52,7 @@
 
         spaceBetween: 0,
         slidesPerView: 1,
+        slidesPerView: "auto",
         centeredSlides: true,
 
         navigation: {
@@ -63,29 +64,31 @@
             el: '.swiper-scrollbar',
             draggable: true,
         },
+
         breakpoints: {
             1001: {
                 slidesPerView: 3
             },
             901: {
                 slidesPerView: 2
-            }
-        }
-    });
-
-    new Swiper(".testimonials__swiper", {
-        effect: "cards",
-        grabCursor: true,
-        pagination: {
-
-            el: '.testimonials__pagination',
-            clickable: true,
-        },
-
-        
-        navigation: {
-            nextEl: '.button-next',
-            prevEl: '.button-prev',
+            },
         },
     });
-})();
+    
+
+new Swiper(".testimonials__swiper", {
+    effect: "cards",
+    grabCursor: true,
+    pagination: {
+
+        el: '.testimonials__pagination',
+        clickable: true,
+    },
+
+
+    navigation: {
+        nextEl: '.button-next',
+        prevEl: '.button-prev',
+    },
+});
+}) ();
