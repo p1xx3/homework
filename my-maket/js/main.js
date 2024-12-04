@@ -66,32 +66,32 @@
 
         breakpoints: {
             1001: {
-                slidesPerView: 3
+                slidesPerView: 3,
             },
             901: {
                 slidesPerView: 2,
-                spaceBetween:5
+                spaceBetween: 5
             },
         },
     });
-    
-
-new Swiper(".testimonials__swiper", {
-    effect: "cards",
-    grabCursor: true,
-    slidesPerView: 1,
-    slideShadows: false,
-    shadow:false,
-    pagination: {
-
-        el: '.testimonials__pagination',
-        clickable: true,
-    },
 
 
-    navigation: {
-        nextEl: '.button-next',
-        prevEl: '.button-prev',
-    },
-});
-}) ();
+    new Swiper(".testimonials__swiper", {
+        effect: "cards",
+        grabCursor: true,
+        slidesPerView: 1,
+        slideShadows: false,
+        shadow: false,
+        pagination: {
+
+            el: '.testimonials__pagination',
+            clickable: true,
+        },
+
+
+        navigation: {
+            nextEl: '.button-next',
+            prevEl: '.button-prev',
+        },
+    });
+})();
