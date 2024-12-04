@@ -50,10 +50,9 @@
 
     new Swiper('.selling__slider', {
 
-        spaceBetween: 0,
+        spaceBetween: -5,
         slidesPerView: 1,
-        slidesPerView: "auto",
-        centeredSlides: true,
+        centeredSlides: false,
 
         navigation: {
             nextEl: '.selling-button-next',
@@ -79,6 +78,9 @@
 new Swiper(".testimonials__swiper", {
     effect: "cards",
     grabCursor: true,
+    slidesPerView: 1,
+    slideShadows: false,
+    shadow:false,
     pagination: {
 
         el: '.testimonials__pagination',
