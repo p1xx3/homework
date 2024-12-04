@@ -51,7 +51,7 @@
     new Swiper('.selling__slider', {
 
         spaceBetween: -5,
-        slidesPerView: 1,
+        slidesPerView: .9,
         centeredSlides: false,
 
         navigation: {
@@ -69,7 +69,8 @@
                 slidesPerView: 3
             },
             901: {
-                slidesPerView: 2
+                slidesPerView: 2,
+                spaceBetween:5
             },
         },
     });
