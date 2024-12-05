@@ -70,10 +70,13 @@
                 spaceBetween:15
             },
             801: {
-                spaceBetween: 32,
+                spaceBetween: 22,
+                slidesPerView:2.3
             },
             1101: {
-                slidesPerView: 3,
+                slidesPerView: 2.9,
+                spaceBetween: 32,
+
             }
         },
     });

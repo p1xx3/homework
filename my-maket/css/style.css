@@ -920,7 +920,7 @@ html {
 }
 
 .send svg {
-    padding-top: 7px;
+    margin-top: 7px;
     flex-shrink: 0;
 }
 
