@@ -70,12 +70,12 @@
                 spaceBetween:15
             },
             801: {
-                spaceBetween: 22,
+                spaceBetween: 32,
                 slidesPerView:2.3
             },
             1101: {
-                slidesPerView: 2.9,
-                spaceBetween: 32,
+                slidesPerView: 3,
+                spaceBetween: 16,
 
             }
         },
