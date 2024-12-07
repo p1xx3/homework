@@ -442,6 +442,12 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+.category__decore{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 
@@ -702,7 +708,7 @@ html {
     align-items: center;
     justify-content: center;
     background-color: #8787872a;
-    height: calc(100% - 35px);
+    height: 100%;
     width: 100px;
     border-radius: 24px 0 0 24px;
     transition: var(--transition);
@@ -733,7 +739,8 @@ html {
 
 .swiper-button-disabled.selling-button-next path,
 .swiper-button-disabled.selling-button-prev path {
-    stroke: #e1d9e1;
+    stroke: transparent;
+
 }
 
 .swiper-button-disabled.selling-button-next,
@@ -748,7 +755,7 @@ html {
 }
 
 .selling__scrollbar {
-    background-color: #181e4b;
+    display: none;
 }
 
 .selling__scrollbar.swiper-scrollbar {
@@ -761,7 +768,7 @@ html {
 }
 
 .swiper-scrollbar .swiper-scrollbar-drag {
-    background-color: #5198df;
+    display: none;
 }
 
 /* ------ */
@@ -1140,8 +1147,7 @@ html {
 }
 
 .company__img:hover {
-    animation: company__hover .5s 1;
-    border-radius: 40px;
+    animation: company__hover .5s;
     box-shadow: 0px 1.85px 3.15px 0px #00000000, 0px 8.15px 6.52px 0px #00000003, 0px 20px 13px 0px #00000003, 0px 38.52px 25.48px 0px #00000003, 0px 64.81px 46.85px 0px #00000005, 0px 100px 80px 0px #00000005;
 }
 
